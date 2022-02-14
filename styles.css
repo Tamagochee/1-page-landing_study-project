@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'SFPro';
-    src: url('Fonts/SFProDisplay-Regular.eot');
+    src: url('/Fonts/SFProDisplay-Regular.eot');
     src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
-        url('Fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Fonts/SFProDisplay-Regular.woff2') format('woff2'),
-        url('Fonts/SFProDisplay-Regular.woff') format('woff'),
-        url('Fonts/SFProDisplay-Regular.ttf') format('truetype');
+        url('/Fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('/Fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('/Fonts/SFProDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
