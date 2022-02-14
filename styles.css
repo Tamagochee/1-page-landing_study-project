@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('/Fonts/SFProDisplay-Regular.eot');
+    font-family: 'SFPro';
+    src: url('Fonts/SFProDisplay-Regular.eot');
     src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
-        url('/Fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/Fonts/SFProDisplay-Regular.woff2') format('woff2'),
-        url('/Fonts/SFProDisplay-Regular.woff') format('woff'),
-        url('/Fonts/SFProDisplay-Regular.ttf') format('truetype');
+        url('Fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('Fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('Fonts/SFProDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'SF Pro Display';
+    font-family: 'SFPro';
     color: rgba(118, 134, 159, 0.8);
     margin: 0;
     background: #181F29;
@@ -58,7 +58,7 @@ h3 {
 
 
 .phone_img {
-    background-image: url(../img/ellipse.png);
+    background-image: url(/img/ellipse.png);
     background-repeat: no-repeat;
     background-size: 75%;
     background-position-x: center;
