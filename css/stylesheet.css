@@ -1,0 +1,280 @@
+@font-face {
+    font-family: "SFPro";
+    font-style: normal;
+    src: url("../Fonts/SFProDisplay-Regular.eot");
+    src: url("../Fonts/SFProDisplay-Regular.ttf");
+    src: url("../Fonts/SFProDisplay-Regular.woff2");
+    src: url("../Fonts/SFProDisplay-Regular.woff");
+}
+body {
+    font-family: "SFPro", sans-serif;
+    background: #11161E;
+}
+
+header {
+    padding: 106px 15%;
+    display: flex;
+    justify-content: space-between;
+}
+header a {
+    font-size: 18px;
+    margin: auto 0;
+    color: rgba(118, 134, 159, 0.8);
+}
+header a:hover {
+    color: #5CA35B;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 62px;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #6A7C95;
+}
+
+main {
+    background: #11161E;
+}
+
+section {
+    padding: 150px 15%;
+}
+
+section:nth-child(even) {
+    background: #181F29;
+}
+
+.titlepage {
+    padding-top: 0;
+}
+.titlepage .titlepage_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.titlepage .titlepage_wrap .titlepage_2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.titlepage .titlepage_wrap .titlepage_2 p {
+    font-size: 26px;
+    color: #6A7C95;
+    margin: 38px 0 68px;
+}
+.titlepage .titlepage_wrap .titlepage_2 .createpage_button {
+    width: 262px;
+    height: 49px;
+    background: #5CA35B;
+    display: flex;
+    border-radius: 10px;
+}
+.titlepage .titlepage_wrap .titlepage_2 .createpage_button a {
+    margin: auto;
+    color: #ffffff;
+    font-size: 24px;
+}
+.titlepage .titlepage_wrap .titlepage_phone {
+    background-image: url("../img/content/Ellipse.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.titlepage .titlepage_contacts {
+    padding-top: 170px;
+    display: flex;
+}
+.titlepage .titlepage_contacts a {
+    margin: auto 25px auto 12px;
+    color: rgba(118, 134, 159, 0.8);
+    font-size: 18px;
+}
+.titlepage .titlepage_contacts a:hover {
+    text-decoration: underline;
+}
+
+.advantages .section_text {
+    margin: 22px auto 65px 0;
+}
+.advantages .advantages_card_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.advantages .advantages_card_wrap .advantages_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: #273140;
+    border-radius: 15px;
+    width: 317px;
+    height: 340px;
+}
+.advantages .advantages_card_wrap .advantages_card p {
+    margin: 0 30px;
+}
+
+.opportunities p {
+    margin: 22px auto 69px 0;
+}
+.opportunities div {
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+.opportunities div img:nth-child(2) {
+    margin: auto 28px auto 47px;
+}
+
+.usability {
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.usability p {
+    width: 565px;
+    margin: 22px auto 49px 0;
+}
+.usability .usability_button {
+    width: 262px;
+    height: 49px;
+    background: #212A38;
+    display: flex;
+    border-radius: 10px;
+}
+.usability .usability_button a {
+    margin: auto;
+    color: #6A7C95;
+    font-size: 20px;
+}
+.usability .usability_pics {
+    display: flex;
+}
+.usability .usability_pics img:first-child {
+    margin-top: auto;
+}
+
+.tarif .section_text {
+    margin: 22px auto 48px 0;
+}
+.tarif .tarif_card_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.tarif .tarif_card_wrap .tarif_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 317px;
+    height: 437px;
+    background: #273140;
+    box-shadow: 0px 1px 26px rgba(24, 31, 41, 0.15);
+    border-radius: 15px;
+    padding: 53px 26px 47px;
+    align-items: center;
+}
+.tarif .tarif_card_wrap .tarif_card .list1 li:nth-child(n+6) {
+    color: #3B485A;
+}
+.tarif .tarif_card_wrap .tarif_card .list2 li:last-child {
+    color: #3B485A;
+}
+.tarif .tarif_card_wrap .tarif_card p {
+    font-size: 12px;
+    color: #717E92;
+}
+.tarif .tarif_card_wrap .tarif_card ul {
+    margin: auto;
+    font-size: 16px;
+    color: #717E92;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.tarif .tarif_card_wrap .tarif_card ul li {
+    line-height: 160%;
+}
+.tarif .tarif_card_wrap .tarif_card .buybutton1 {
+    width: 248px;
+    height: 38px;
+    background: #6A7395;
+    display: flex;
+    border-radius: 5px;
+}
+.tarif .tarif_card_wrap .tarif_card .buybutton1 a {
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.tarif .tarif_card_wrap .tarif_card .buybutton2 {
+    width: 248px;
+    height: 38px;
+    background: #6A9590;
+    display: flex;
+    border-radius: 5px;
+}
+.tarif .tarif_card_wrap .tarif_card .buybutton2 a {
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.tarif .tarif_card_wrap .tarif_card .buybutton3 {
+    width: 248px;
+    height: 38px;
+    background: #95936A;
+    display: flex;
+    border-radius: 5px;
+}
+.tarif .tarif_card_wrap .tarif_card .buybutton3 a {
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.socials p {
+    width: 565px;
+    margin: 22px 0;
+}
+.socials div img:not(:last-child) {
+    margin-right: 38.19px;
+}
+
+footer {
+    padding: 52px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a {
+    font-size: 12px;
+    line-height: 128.8%;
+    color: #2D3746;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer div {
+    display: flex;
+}
+footer div img {
+    display: block;
+    margin-right: 18px;
+}

@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "SFPro";
+  font-style: normal;
+  src: url('../Fonts/SFProDisplay-Regular.eot');
+  src: url('../Fonts/SFProDisplay-Regular.ttf');
+  src: url('../Fonts/SFProDisplay-Regular.woff2');
+  src: url('../Fonts/SFProDisplay-Regular.woff');
+}
+@mixin buttonstyle ($button_width, $button_height,  $button_color, $button_textcolor, $button_fontsize, $button_border) {
+  width: $button_width;
+  height: $button_height;
+  background: $button_color;
+  display: flex;
+  border-radius: $button_border;
+  a {
+    margin: auto;
+    color: $button_textcolor;
+    font-size: $button_fontsize;
+  }  
+}
+@mixin headerstyle ($h_fontweight, $h_fontsize, $h_letterspacing) {
+  font-weight: $h_fontweight;
+  font-size: $h_fontsize;
+  letter-spacing: $h_letterspacing;
+  color: #ffffff;
+}
+body {
+  font-family: "SFPro", sans-serif;
+  background: #11161E;
+}
+header {
+  padding: 106px 15%;
+  display: flex;
+  justify-content: space-between;
+  a {
+    font-size: 18px;
+    margin: auto 0;
+    color: rgba(118, 134, 159, 0.8);
+    &:hover {
+      color: #5CA35B;
+    }
+  }
+}
+h1 {
+  @include headerstyle(bold, 62px, 2.5px);
+}
+h2 {
+  @include headerstyle(700, 42px, 2px);
+}
+h3 {
+  @include headerstyle(700, 28px, 1.5px);
+}
+p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #6A7C95;
+}
+main {
+  background: #11161E;
+}  
+section {
+  padding: 150px 15%;
+}
+section:nth-child(even){
+  background: #181F29;
+}
+.titlepage {
+  padding-top: 0;
+  .titlepage_wrap {
+    display: flex;
+    justify-content: space-between;
+    .titlepage_2 {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      p {
+        font-size: 26px;
+        color: #6A7C95;
+        margin: 38px 0 68px;
+      }
+      .createpage_button {
+        @include buttonstyle(262px, 49px, #5CA35B, #ffffff, 24px, 10px)
+      }
+    }
+    .titlepage_phone {
+      background-image: url("../img/content/Ellipse.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .titlepage_contacts {
+    padding-top: 170px;
+    display: flex;
+    a {
+      margin: auto 25px auto 12px;
+      color: rgba(118, 134, 159, 0.8);
+      font-size: 18px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.advantages {
+  .section_text {
+    margin: 22px auto 65px 0;
+  }
+  .advantages_card_wrap {
+    display: flex;
+    justify-content: space-between;
+    .advantages_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      background: #273140;
+      border-radius: 15px;
+      width: 317px;
+      height: 340px;
+      p {
+        margin: 0 30px;
+      }
+    }
+  }
+}
+.opportunities {
+  p {
+    margin: 22px auto 69px 0;
+  }
+  div {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    img:nth-child(2) {
+      margin: auto 28px auto 47px;
+    }
+  }
+}
+.usability {
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  p {
+    width: 565px;
+    margin: 22px auto 49px 0;
+  }
+  .usability_button {
+    @include buttonstyle(262px, 49px, #212A38, #6A7C95, 20px, 10px)
+  }
+  .usability_pics {
+    display: flex;
+    img {
+      &:first-child{
+        margin-top: auto;
+      }
+    }
+  }
+}
+.tarif {
+  .section_text {
+    margin: 22px auto 48px 0;
+  }
+  .tarif_card_wrap {
+    display: flex;
+    justify-content: space-between;
+    .tarif_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 317px;
+      height: 437px;
+      background: #273140;
+      box-shadow: 0px 1px 26px rgba(24, 31, 41, 0.15);
+      border-radius: 15px;
+      padding: 53px 26px 47px;
+      align-items: center;
+      .list1 li:nth-child(n+6) {
+          color: #3B485A;
+        }
+      .list2 li:last-child {
+        color: #3B485A;
+      }    
+      p {
+        font-size: 12px;
+        color: #717E92;
+      }
+      ul {
+        margin: auto;
+        font-size: 16px;
+        color: #717E92;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        li {
+          line-height: 160%;
+        }
+      }
+      .buybutton1 {
+        @include buttonstyle(248px, 38px, #6A7395, #FFFFFF, 18px, 5px);
+      }
+      .buybutton2 {
+        @include buttonstyle(248px, 38px, #6A9590, #FFFFFF, 18px, 5px);
+      }
+      .buybutton3 {
+        @include buttonstyle(248px, 38px, #95936A, #FFFFFF, 18px, 5px);
+      }
+    }  
+  }
+}
+.socials {
+  p {
+    width: 565px;
+    margin: 22px 0;
+  }
+  div {
+    img:not(:last-child) {
+      margin-right: 38.19px;
+    }
+  }
+}  
+footer {
+  padding: 52px 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: 12px;
+    line-height: 128.8%;
+    color: #2D3746;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  div {
+    display: flex;
+    img {
+      display: block;
+      margin-right: 18px;
+    }
+  }
+}
